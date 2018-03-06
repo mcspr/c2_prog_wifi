@@ -218,6 +218,9 @@ void setup() {
   Serial.begin(115200);
 
   // Wifi Setup
+  WiFi.persistent(false);
+  WiFi.mode(WIFI_OFF);
+  WiFi.mode(WIFI_STA);
   WiFi.begin(WIFI_NAME, WIFI_PASSWORD);
 }
 
